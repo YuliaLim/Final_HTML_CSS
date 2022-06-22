@@ -1,0 +1,111 @@
+footer hr {
+  background: #FF4E50;
+  margin-top: 100px;
+  height: 2px;
+}
+
+footer .footer-list {
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 38px;
+  margin-bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-list .companyName {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FF4E50;
+}
+
+footer .footer-list .footer-list-item-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #444444;
+}
+
+footer .footer-list .footer-list-company ul li {
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 14px;
+  color: #999999;
+  margin-top: 10px;
+}
+
+footer .footer-list .footer-list-company ul li:hover {
+  cursor: pointer;
+  color: #FF4E50;
+}
+
+footer .footer-list .footer-list-item-logo {
+  text-align: center;
+}
+
+footer .footer-list .footer-list-item-logo .footer-list-item-logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #CCCCCC;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-list {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    margin-top: 40px;
+  }
+  footer hr {
+    margin-top: 0;
+  }
+  footer .footer-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px;
+    padding-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-list div {
+    margin-top: 10px;
+  }
+  footer .footer-list .footer-list-company {
+    text-align: center;
+  }
+  footer .footer-list .footer-list-company ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-list .footer-list-company ul div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
+  footer .footer-list .footer-list-company ul li {
+    margin-right: 5px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

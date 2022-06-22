@@ -1,0 +1,118 @@
+header {
+  background-image: url(../../img/Background.svg);
+  max-height: 700px;
+}
+
+header .header-nav-signUp {
+  padding-left: 248px;
+  padding-top: 50px;
+  padding-right: 270px;
+  padding-bottom: 137px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-nav-signUp div:first-child {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header .header-nav-signUp div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-nav-signUp div:nth-child(2) a {
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 12px 19px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header .header-nav-signUp div:nth-child(2) a:hover {
+  padding: 10px 17px;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+}
+
+header .header-name {
+  text-align: center;
+  padding-bottom: 224px;
+}
+
+header .header-name .header-nav-signUp-visible-for-small {
+  display: none;
+}
+
+header .header-name h1 {
+  font-weight: 700;
+  font-size: 52px;
+  padding-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+header .header-name p {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 24px;
+  color: #F7F3F2;
+  padding-bottom: 33px;
+}
+
+header .header-name button {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  header .header-nav-signUp {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  header .header-nav-signUp {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .header-nav-signUp .header-nav-signUp-hidden-for-small {
+    display: none;
+  }
+  header .header-name {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  header .header-name .header-nav-signUp-visible-for-small {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 27px;
+  }
+  header .header-name h1 {
+    font-size: 30px;
+  }
+  header .header-name p {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

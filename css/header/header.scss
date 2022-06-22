@@ -1,0 +1,127 @@
+$white_main: white;
+
+header {
+    background-image: url(../../img/Background.svg);
+    max-height: 700px;
+
+
+    .header-nav-signUp {
+        padding-left: 248px;
+        padding-top: 50px;
+        padding-right: 270px;
+        padding-bottom: 137px;
+        display: flex;
+        justify-content: space-between;
+
+        div:first-child {
+            font-weight: 700;
+            font-size: 20px;
+            color: $white_main;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        div:nth-child(2) {
+            display: flex;
+
+            a {
+                font-weight: 400;
+                font-size: 14px;
+                margin-right: 20px;
+                text-decoration: none;
+                color: $white_main;
+                padding: 12px 19px;
+                font-family: 'Montserrat', sans-serif;
+
+            }
+
+            a:hover {
+                padding: 10px 17px;
+                border: 2px solid #FFFFFF;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    .header-name {
+        text-align: center;
+        padding-bottom: 224px;
+
+        .header-nav-signUp-visible-for-small {
+            display: none;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 52px;
+            padding-bottom: 30px;
+            font-family: 'Montserrat', sans-serif;
+
+            color: $white_main;
+        }
+
+        p {
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 24px;
+            color: #F7F3F2;
+            padding-bottom: 33px;
+        }
+
+        button {
+            font-weight: 700;
+            font-size: 14px;
+            padding: 10px 20px;
+
+
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    header {
+        // background-size: 768px 700px;
+
+        .header-nav-signUp {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    header {
+        // max-height: 540px;
+        .header-nav-signUp {
+            justify-content: center;
+            padding-left: 0;
+            padding-right: 0;
+            .header-nav-signUp-hidden-for-small {
+                display: none;
+
+
+            }
+        }
+
+        .header-name {
+            margin-left: 20px;
+            margin-right: 20px;
+            .header-nav-signUp-visible-for-small {
+                display: block;
+                font-weight: 700;
+                font-size: 20px;
+                color: $white_main;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 27px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 18px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

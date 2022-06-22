@@ -1,0 +1,112 @@
+.step-one {
+  background-image: url(../../img/Step1.svg);
+}
+
+.step-three {
+  background-image: url(../../img/Step3.svg);
+}
+
+.step-two {
+  background-image: url(../../img/Step2.svg);
+}
+
+.how-work-wrapper {
+  margin-top: 95px;
+  text-align: center;
+}
+
+.how-work-wrapper h1 {
+  margin-bottom: 35px;
+}
+
+.how-work-wrapper .how-work-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.how-work-wrapper .how-work-steps .how-work-steps-item {
+  width: 250px;
+  height: 379px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 21px;
+  text-align: left;
+}
+
+.how-work-wrapper .how-work-steps .how-work-steps-item .btn {
+  font-weight: 400;
+  font-size: 10px;
+  padding: 4px 14px;
+  margin-bottom: 15px;
+  width: 70px;
+}
+
+.how-work-wrapper .how-work-steps .how-work-steps-item h1 {
+  color: white;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+.how-work-wrapper .how-work-steps .how-work-steps-item p {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .how-work-wrapper .how-work-steps {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .how-work-wrapper .how-work-steps .how-work-steps-item {
+    margin-right: 0;
+  }
+  .how-work-wrapper .how-work-steps .how-work-steps-item h1 {
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-work-steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .how-work-steps .how-work-steps-item {
+    height: 240px;
+    margin-bottom: 10px;
+  }
+  .how-work-steps .step-three {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .how-work-wrapper {
+    margin-top: 35px;
+  }
+}
+/*# sourceMappingURL=how-work.css.map */

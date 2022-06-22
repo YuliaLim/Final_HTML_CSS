@@ -1,0 +1,108 @@
+$white_main: white;
+
+.step-one {
+    background-image: url(../../img/Step1.svg);
+}
+
+.step-three {
+    background-image: url(../../img/Step3.svg);
+}
+
+.step-two {
+    background-image: url(../../img/Step2.svg);
+}
+
+.how-work-wrapper {
+    margin-top: 95px;
+
+    text-align: center;
+
+    h1 {
+        margin-bottom: 35px;
+    }
+
+    .how-work-steps {
+        display: flex;
+        justify-content: center;
+
+        .how-work-steps-item {
+
+            width: 250px;
+            height: 379px;
+            margin-right: 20px;
+            display: flex;
+            flex-shrink: 2;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 21px;
+            text-align: left;
+
+            .btn {
+                font-weight: 400;
+                font-size: 10px;
+                padding: 4px 14px;
+                margin-bottom: 15px;
+                width: 70px;
+            }
+
+            h1 {
+                color: $white_main;
+                margin-bottom: 10px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 24px;
+            }
+
+            p {
+                font-family: 'Roboto';
+                font-weight: 300;
+                font-size: 14px;
+                color: $white_main;
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .how-work-wrapper .how-work-steps {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .how-work-steps-item {
+            margin-right: 0;
+            h1 {
+                line-height: 14px;
+            }
+
+        }
+
+    
+    }
+}
+
+@media (max-width:600px){
+    .how-work-steps {
+        flex-direction: column;
+        align-items: center;
+
+        .how-work-steps-item {
+            height: 240px;
+            margin-bottom: 10px;
+            
+        }
+        .step-three {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .how-work-wrapper {
+margin-top: 35px;
+        
+    }
+}

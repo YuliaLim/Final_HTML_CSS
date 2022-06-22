@@ -1,0 +1,197 @@
+.wrapper-holiday {
+    margin-top: 90px;
+    text-align: center;
+
+    .holiday {
+        margin-top: 15px;
+
+        .holiday-line {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+
+            div {
+                height: 310px;
+                width: 300px;
+                margin-right: 20px;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                position: relative;
+                cursor: pointer;
+
+                p {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    z-index: 2;
+                    color: white;
+                    font-size: 22px;
+
+                    span {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                p:hover {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+
+        .firstLine {
+
+            div:first-child {
+                background-image: url(../../img/Object6.svg);
+            }
+
+            div:nth-child(2) {
+                background-image: url(../../img/Object7.svg);
+            }
+
+            div:nth-child(3) {
+                background-image: url(../../img/Object1.svg);
+            }
+        }
+
+        .secondLine {
+
+            div:first-child {
+                background-image: url(../../img/Object2.svg);
+            }
+
+            div:nth-child(2) {
+                width: 620px;
+                background-image: url(../../img/culture.png);
+            }
+        }
+
+        .thirdLine {
+
+            div:first-child {
+                width: 620px;
+                background-image: url(../../img/Object4.svg);
+            }
+
+            div:nth-child(2) {
+                background-image: url(../../img/Object5.svg);
+            }
+        }
+
+    }
+
+    .activity {
+        margin-top: 90px;
+        text-align: center;
+
+        p {
+            margin-top: 43px;
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 18px;
+        }
+
+        form {
+            margin-top: 25px;
+
+            input {
+                width: 299px;
+                height: 40px;
+                border: 1px solid #D4D4D4;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                border-radius: 3px;
+                padding-left: 15px;
+                margin-right: 10px;
+            }
+
+            input::placeholder {
+                font-family: 'Roboto';
+                font-weight: 300;
+                font-size: 14px;
+                color: #999999;
+            }
+
+            button {
+                padding: 10px 30px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .wrapper-holiday {
+        margin-right: -10px;
+        margin-left: 10px;
+
+        .holiday {
+            .holiday-line div {
+                width: 236px;
+            }
+
+            .secondLine div:nth-child(2) {
+                width: 492px;
+            }
+
+            .thirdLine div:first-child {
+                width: 492px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:320px) {
+    .wrapper-holiday {
+        margin-top: 35px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        .holiday {
+            .holiday-line {
+                flex-direction: column;
+                margin-top: 0;
+                
+
+                div {
+                    width: 300px !important;
+                    height: 120px !important;
+                    margin-bottom: 10px;
+                    background-size:cover;
+                    background-position: -1px;
+                }
+                .holiday-travel{
+                    background-position: 0 0;
+                }
+            }
+           
+        }
+
+        .activity {
+            margin-top: 35px;
+
+            p {
+                margin-top: 10px;
+            }
+
+            form {
+                margin-top: 15px;
+
+                input {
+                    width: 265px;
+                    margin: 0;
+                }
+
+                button {
+                    width: 280px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
